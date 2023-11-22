@@ -1,0 +1,9 @@
+[Unit]
+Description= Ausführen von backup.sh
+
+[Service]
+Type=simple
+ExecStart=/etc/backup.sh
+
+[Install]
+WantedBy=multi-user.target

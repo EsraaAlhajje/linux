@@ -1,0 +1,10 @@
+[Unit]
+Description=Back-up für Home-Verzeichnis 
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1h
+Unit=backup.service
+
+[Install]
+WantedBy=timers.target
