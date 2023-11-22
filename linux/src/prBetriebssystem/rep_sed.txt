@@ -1,0 +1,15 @@
+nano rep.sed
+
+s/daß/dass/g
+-----------------
+nano rep.sh
+
+#!/bin/bash
+
+ordner="/home/esra/esra/*"
+s="/home/esra/rep.sed"
+
+for file in $ordner;do
+
+    sed -i -f 'rep.sed' "$file"
+done
